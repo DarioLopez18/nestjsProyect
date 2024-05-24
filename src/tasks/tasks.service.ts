@@ -1,10 +1,5 @@
 import { Injectable } from '@nestjs/common';
-
-export interface TaskInterface {
-  id: number;
-  name: string;
-  status: boolean;
-}
+import { createTaskDto } from './DTO/create-task.dto';
 
 @Injectable()
 export class TasksService {
@@ -36,7 +31,11 @@ export class TasksService {
   getTasks() {
     return this.tasks;
   }
-  createTasks(task: TaskInterface) {
+  generateId (){
+    return this.tasks.length + 1;
+  }
+  createTasks(task: createTaskDto) {
+    task.id = this.generateId();
     this.tasks.push(task);
     return task;
   }

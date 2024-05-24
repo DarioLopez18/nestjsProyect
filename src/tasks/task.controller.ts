@@ -11,6 +11,7 @@ import {
   Res,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
+import { createTaskDto } from './DTO/create-task.dto';
 
 export interface TaskInterface {
   id: number;
@@ -41,7 +42,7 @@ export class TaskController {
     return this.taskService.getTasks();
   }
   @Post('/')
-  createTasks(@Body() task: TaskInterface) {
+  createTasks(@Body() task: createTaskDto) {
     return this.taskService.createTasks(task);
   }
   @Put('/')
