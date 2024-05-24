@@ -58,3 +58,5 @@ DTO
 -nest g module proyects crea un modulo de proyectos
 
 - nest g mo proyects mas abreviado
+
+-> nest g co hello para crear controllers
