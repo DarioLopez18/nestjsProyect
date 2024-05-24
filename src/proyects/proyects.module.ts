@@ -4,6 +4,6 @@ import { ProyectsService } from './proyects.service';
 
 @Module({
   controllers: [ProyectsController],
-  providers: [ProyectsService]
+  providers: [ProyectsService],
 })
 export class ProyectsModule {}

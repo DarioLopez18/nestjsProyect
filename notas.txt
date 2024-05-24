@@ -64,3 +64,7 @@ DTO
 -> nest g co auth --no-spec genera el controller pero sin el archivo de test
 
 -> nest g s hello para crear servicios
+
+-> nest g s hello --no-spec
+
+los metodos los mismos de http
