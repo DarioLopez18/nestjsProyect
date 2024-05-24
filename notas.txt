@@ -1,0 +1,60 @@
+
+Nest JS es un framework open source para crear aplicaciones backend excalables de node. Está desarrollado con typescript. 
+
+Programación orientada a objetos, funcional y reactiva. Está por encima de express.
+
+La estructura de carpetas es parecida a las de angular.
+
+
+-> npm i -g @nestjs/cli para crear un proyecto con nest
+
+-> nest -v nos da la versión de nest que tengamos instalada
+
+->nest solo nos da la lista de comandos de nest
+
+->nest new my_first_app para crear un proyecto
+
+->npm start ejecuta el proyecto (tengo que ver un hello word)
+
+->npm run start:dev lo ejecuta en modo desarrollo (esto nos da un watch que se queda escuchando los cambios)
+
+-> npm run build para compilar el código
+
+->npm run lint nos ayuda a correr el linter (eslint)
+
+-> Dist es el código convertido de typescritp a JS
+
+->Node modules es para el funcionamiento de node modules.
+
+-> Src es donde va el código
+
+->Test es para escribir test unitarios o de integración
+
+-> Eslint es porque configura el eslinter
+
+-> nest cli json es para configuración interna de nest
+
+-> Los archivos de ts es para configurar typescript.
+
+-> En nest tenemos varios módulos
+
+Por ejemplo:
+
+-> Auth modules
+-> Product modules
+-> Users modules
+-> Task modules
+
+y aparte un mvc
+
+Controller
+Service 
+DTO
+
+-> @Module({}) anotacion para decir que es un modulo
+
+-nest generate o nest g es para generar cosas
+
+-nest g module proyects crea un modulo de proyectos
+
+- nest g mo proyects mas abreviado
