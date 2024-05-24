@@ -60,3 +60,7 @@ DTO
 - nest g mo proyects mas abreviado
 
 -> nest g co hello para crear controllers
+
+-> nest g co auth --no-spec genera el controller pero sin el archivo de test
+
+-> nest g s hello para crear servicios
