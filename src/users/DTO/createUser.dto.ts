@@ -5,12 +5,13 @@ import {
   Min,
   IsEmail,
   IsNotEmpty,
+  IsDate,
+  isString,
 } from 'class-validator';
 
 export class CreateUserDto {
-  @IsNumber()
-  @Min(0)
-  id: number;
+  @IsString()
+  id: string;
   @IsString()
   @MinLength(5)
   name: string;
@@ -19,4 +20,7 @@ export class CreateUserDto {
   @IsNotEmpty()
   @MinLength(5)
   email: string;
+  @IsString()
+  @MinLength(8)
+  password: string;
 }

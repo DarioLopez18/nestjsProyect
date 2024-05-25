@@ -83,3 +83,7 @@ nest g mi user/logger para crear un middleware
 con el comando nest g resource podemos elegir crear una REST api, graphql,microservice,websockets
 
 si elegimos una rest api ya nos genera el service, el controller, el module, y hasta el dto
+
+npm i prisma -D para instalar prisma  
+
+npx prisma init para iniciar prisma
