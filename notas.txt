@@ -68,3 +68,6 @@ DTO
 -> nest g s hello --no-spec
 
 los metodos los mismos de http
+
+class validator y class transformer nos sirve para realizar 
+validaciones con los dto

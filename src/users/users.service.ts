@@ -1,3 +1,4 @@
+import { CreateUserDto } from './DTO/createUser.dto';
 import { Injectable } from '@nestjs/common';
 
 export interface UserInterface {
@@ -23,5 +24,10 @@ export class UsersService {
 
   getUsers(): UserInterface[] {
     return this.users;
+  }
+
+  createUser(user: CreateUserDto) {
+    this.users.push(user);
+    return user;
   }
 }

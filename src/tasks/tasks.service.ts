@@ -31,7 +31,7 @@ export class TasksService {
   getTasks() {
     return this.tasks;
   }
-  generateId (){
+  generateId() {
     return this.tasks.length + 1;
   }
   createTasks(task: createTaskDto) {

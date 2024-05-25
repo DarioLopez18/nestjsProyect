@@ -7,7 +7,7 @@ import { HelloController } from './hello/hello.controller';
 import { HelloService } from './hello/hello.service';
 
 @Module({
-  imports: [ ProyectsModule, AuthModule, UsersModule, TasksModule],
+  imports: [ProyectsModule, AuthModule, UsersModule, TasksModule],
   controllers: [HelloController],
   providers: [HelloService],
 })
