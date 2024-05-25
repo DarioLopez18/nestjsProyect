@@ -79,3 +79,7 @@ nest g guard /hello/guards/auth para crear una guarda
 el uso de otra función con alguna lógica)
 
 nest g mi user/logger para crear un middleware
+
+con el comando nest g resource podemos elegir crear una REST api, graphql,microservice,websockets
+
+si elegimos una rest api ya nos genera el service, el controller, el module, y hasta el dto
