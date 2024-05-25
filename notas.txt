@@ -73,3 +73,5 @@ class validator y class transformer nos sirve para realizar
 validaciones con los dto
 
 nest g pipe hello/pipes/validateuser para crear un pipes
+
+nest g guard /hello/guards/auth para crear una guarda (una guarda basicamente es una función que protege el uso de otra función con alguna lógica)
