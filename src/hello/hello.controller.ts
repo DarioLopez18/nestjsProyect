@@ -1,5 +1,6 @@
-import { Controller, Get, HttpCode, Req, Res } from '@nestjs/common';
-import { Request, Response } from 'express';
+import { Controller, Get, HttpCode, Param, ParseIntPipe, Query, Req, Res } from '@nestjs/common';
+import { query, Request, Response } from 'express';
+import { ValidateuserPipe } from './pipes/validateuser/validateuser.pipe';
 
 @Controller({ path: '/' })
 export class HelloController {
@@ -21,5 +22,15 @@ export class HelloController {
   @HttpCode(500)
   errorPage() {
     return 'Error page';
+  }
+
+  @Get('ticket/:num')
+  getNumber(@Param('num',ParseIntPipe) num: number) {
+    return num + 10;
+  }
+
+  @Get('greet')
+  greet(@Query(ValidateuserPipe) query: {name: string, age: number}){
+    return `Hello ${query.name},you are ${query.age} years old`;
   }
 }
